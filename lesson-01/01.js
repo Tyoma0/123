@@ -4,10 +4,10 @@
 
 
 let sum = 0; 
-let i = 1;
+let i =0;
 while (i <= 20) { 
-    sum +=i; 
-    i++ 
+     sum = i + 0;
+     i++;
 }
 console.log(sum);
 
