@@ -6,7 +6,7 @@
 
 // your code
 
-let num = 0;
+let sum = 0;
 let division = 0;
 while(division < 20)
   {
