@@ -9,6 +9,7 @@ while (i <= 20) {
     sum +=i; 
     i++ 
 }
+console.log(sum);
 
  
 
