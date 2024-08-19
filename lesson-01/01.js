@@ -3,14 +3,14 @@
 // your code = 0
 
 
-let sum = 1; 
-
-while (sum <= 20) { 
-    sum = sum + 1; 
-     
+let sum = 0; 
+let i = 1;
+while (i <= 20) { 
+    sum +=i; 
+    i++ 
 }
 
-console.log(sum); 
+ 
 
 
 
