@@ -8,5 +8,5 @@ const score = 70 // тестовое значение, можно изменят
 let grade
 // your code
 while () {
-    alert('')
+    alert('F')
 }
