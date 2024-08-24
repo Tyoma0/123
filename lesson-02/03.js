@@ -13,7 +13,7 @@ if (score >= 90) {
     grade = 'B';
 } else if (score >= 70) {
     grade = 'C';
-} else if (score >= 60) {
+} else if (score >= 50) {
     grade = 'D';
 } else {
     grade = 'F';
