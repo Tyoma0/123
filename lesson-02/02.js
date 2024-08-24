@@ -11,7 +11,7 @@
  // your code
 
 
-let isWinningDouble
+let isWinningDouble =false
 function rollDice() {
   return Math.floor(Math.random()  *  6) + 1; }
 let dice1 = rollDice();
@@ -21,4 +21,5 @@ if (dice1 === dice2 && dice1 > 3) {
   console.log("Выпавший дубль выигрышный!");
 } else {
   console.log("Не выпал выигрышный дубль.");
+  isWinningDouble = true
 }
