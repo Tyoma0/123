@@ -21,7 +21,8 @@ while (isWinningDouble === true) {
 }
 if (dice1 === dice2 && dice1 > 3) {
   console.log("Выпавший дубль выигрышный!");
+  isWinningDouble = true
 } else {
   console.log("Не выпал выигрышный дубль.");
-  isWinningDouble = true
+  
 }
