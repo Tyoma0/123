@@ -12,8 +12,8 @@
 
 
 let isWinningDouble =false
-function rollDice() {
-  return Math.floor(Math.random()  *  6) + 1; }
+
+ Math.floor(Math.random()  *  6) + 1; 
 let dice1 = 2;
 let dice2 = 5;
 while (isWinningDouble === true) {
