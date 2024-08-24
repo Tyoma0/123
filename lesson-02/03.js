@@ -15,8 +15,8 @@ if (score >=90) {
     grade ='C';   
 } else if (score>=50) {
     grade ="D";
-} else (score>=0){
+} else (score>=0) {
     grade ="F"
 }
-console.log(`Оценка студента: ${grade}`);
+console.log(grade);
 
