@@ -16,14 +16,18 @@
 */
 
 function findUniqueElements(array) {
-    const newAllay = [];
+    const newAllay =  {
+        "Duplicate Numbers": [],
+        "Unique Numbers": []
+      };
     for (let index = 0; index < array.length; index++) {
         if (array[i] !== array[i-1] && array[i] !== array[i+1]) {
             newAllay["Unique Numbers"].push(array[i]);
           } else {
             newAllay["Duplicate Numbers"].push(array[i]);
           }
-        
+          
     }
     return newAllay
+    
 }
