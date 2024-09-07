@@ -31,10 +31,21 @@
 //     return newAllay
     
 // }
-
+// findUniqueElements([1,2,3,2,1,4])
 
 
 function findUniqueElements(array) {
-    return Array.from(new Set(array))
-}
-findUniqueElements([1,2,3,2,1,4])
+    const obj = {};
+    const output = [];
+    
+    for (let i = 0; i < array.length; i++) {
+    const item = array[i];
+    if (!obj[item]) {
+    obj[item] = true;
+    output.push(item);
+    }
+    }
+    
+    return output;
+    }
+    console.log(findUniqueElements([1, 2, 3, 2, 1, 4]))
