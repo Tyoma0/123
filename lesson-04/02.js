@@ -14,5 +14,16 @@
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
-const
-function findUniqueElements() {}
+
+function findUniqueElements(array) {
+    const newAllay = [];
+    for (let index = 0; index < array.length; index++) {
+        if (array[i] !== array[i-1] && array[i] !== array[i+1]) {
+            newAllay["Unique Numbers"].push(array[i]);
+          } else {
+            newAllay["Duplicate Numbers"].push(array[i]);
+          }
+        
+    }
+    return newAllay
+}
