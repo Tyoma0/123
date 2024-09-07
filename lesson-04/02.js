@@ -15,37 +15,17 @@
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
-// function findUniqueElements(array) {
-//     const newAllay =  {
-//         "Duplicate Numbers": [],
-//         "Unique Numbers": []
-//       };
-//     for (let index = 0; index < array.length; index++) {
-//         if (array[i] !== array[i-1] && array[i] !== array[i+1]) {
-//             newAllay["Unique Numbers"].push(array[i]);
-//           } else {
-//             newAllay["Duplicate Numbers"].push(array[i]);
-//           }
-          
-//     }
-//     return newAllay
-    
-// }
-// findUniqueElements([1,2,3,2,1,4])
-
-
 function findUniqueElements(array) {
-    const obj = {};
-    const output = [];
+    let uniqueArray = [];
     
-    for (let i = 0; i < array.length; i++) {
-    const item = array[i];
-    if (!obj[item]) {
-    obj[item] = true;
-    output.push(item);
-    }
-    }
+    array.forEach(element => {
+        if (!uniqueArray.includes(element)) {
+            uniqueArray.push(element);
+        }
+    });
     
-    return output;
-    }
-    console.log(findUniqueElements([1, 2, 3, 2, 1, 4]))
+    return uniqueArray;
+}
+
+
+findUniqueElements([1, 2, 3, 2, 1, 4]);
