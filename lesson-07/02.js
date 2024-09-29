@@ -7,7 +7,7 @@ function isNumeric(str) {
   if (typeof str !== 'string' || str.trim()=== '') {
     return false
   }
-  const invalidCharacters = /[^\d\.-]/g;
+  const invalidCharacters = /e[^\d\.-]/g;
   return !invalidCharacters.test(str) && !Number.isNaN(+str);
   
 }
@@ -17,3 +17,4 @@ function isNumeric(str) {
  console.log(isNumeric("123abc")) // Ожидаемый результат: false
  console.log(isNumeric("abc")) // Ожидаемый результат: false
  console.log(isNumeric(" ")) // Ожидаемый результат: false
+console.log(isNumeric("1e2"));
