@@ -4,8 +4,12 @@
  */
 
 function isNumeric(str) {
-  // your code
- return 
+  if (typeof str !== 'string' || str.trim()=== '') {
+    return false
+  }
+  const invalidCharacters = /[^\d\.-]/g;
+  return !invalidCharacters.test(str) && !Number.isNaN(+str);
+  
 }
 
  console.log(isNumeric("123")) // Ожидаемый результат: true
