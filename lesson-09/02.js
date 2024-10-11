@@ -35,7 +35,7 @@ const map = (array,callback) => {
       
     }
     
-   return newArray * 2
+   return newArray
 }
 
 
