@@ -41,7 +41,8 @@ startButton.addEventListener('click', (event) => {
   }
 });
 
-cancelButton.addEventListener('click', () => {
+cancelButton.addEventListener('click', (event) => {
+  event.preventDefault()
   if (isTimerStarted) {
     clearInterval(timerId);
     countdownDisplay.textContent = 'Отменено';
@@ -52,7 +53,8 @@ cancelButton.addEventListener('click', () => {
 function startCount() {
   let counter = 3;
   if (isTimerStarted) {
-    timerId = setInterval(() => {
+    timerId = setInterval((event) => {
+      event.preventDefault()
       if (counter === 0) {
         clearInterval(timerId);
         countdownDisplay.textContent = '🚀';
