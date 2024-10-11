@@ -31,5 +31,7 @@ const map = (array,callback) => {
       newArray.push(array[i])
     }
     
-  } return newArray
+  } return newArray * 2
 }
+
+
