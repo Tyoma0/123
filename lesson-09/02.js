@@ -30,22 +30,26 @@ console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 // console.log(map);
 
 
+
+
+
 const map = (array, callback) => {
   const result = [];
-  for (let i = 0; i < array.length; i++) {
-    result.push(callback(array[i], i));
-  }
+  array.forEach((element, index) => {
+    const mappedElement = callback(element, index);
+    if (mappedElement != undefined) {
+      result.push(mappedElement);
+    }
+  });
   return result;
-}
+};
 
 const numbers = [1, 2, 3, 4, 5];
-const doubledNumbers = map(numbers, (element, index) => {
-  return element * 2;
-});
-console.log(doubledNumbers);
+const doubledNumbers = (num) => {
+  return num * 2;
+};
 
-
-
-
+const evenN = map(numbers, doubledNumbers);
+console.log(evenN);
 
 
