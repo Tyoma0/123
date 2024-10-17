@@ -45,11 +45,9 @@ const map = (array, callback) => {
 };
 
 const numbers = [1, 2, 3, 4, 5];
-const doubledNumbers = (num) => {
-  return num * 2;
-};
 
-const evenN = map(numbers, doubledNumbers);
-console.log(evenN);
-
+const doubledNumbers = map(numbers, (element, index) => {
+  return element * 2
+})
+console.log(doubledNumbers);
 
