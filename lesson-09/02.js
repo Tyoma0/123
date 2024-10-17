@@ -21,33 +21,27 @@ const doubledNumbers = map(numbers, (element, index) => {
   return element * 2
 })
 
-console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
-*/
-// const array = [1,2,3,4,5]
-//  const map = array.map((ele)=>{
-// return ele * 2
-//  }) 
-// console.log(map);
+console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]*/
 
 
 
+function map(array, callback) {
+  const result = []; 
+  for(let i = 0; i < array.length; i++) {
+    
+    const element = array[i]; 
+     const index = i; 
+      result.push(callback(element, index)); 
+  }
+  return result; 
+}
 
-
-const map = (array, callback) => {
-  const result = [];
-  array.forEach((element, index) => {
-    const mappedElement = callback(element, index);
-    if (mappedElement != undefined) {
-      result.push(mappedElement);
-    }
-  });
-  return result;
-};
 
 const numbers = [1, 2, 3, 4, 5];
 
 const doubledNumbers = map(numbers, (element, index) => {
-  return element * 2
-})
+  return element * 2;
+});
+
 console.log(doubledNumbers);
 
