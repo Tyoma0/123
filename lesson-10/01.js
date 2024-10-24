@@ -64,7 +64,7 @@ const view = {
     list.addEventListener('click',(event)=>{
 
       if (event.target.classList.contains('delete-button')) {
-        const movieItem = event.target.closest('.movie');
+        const movieItem = event.target.parentElement.id;
         const movieId = movieItem.id;
         controller.deleteMovie(movieId);
       }
@@ -123,6 +123,7 @@ const controller = {
   deleteMovie(id){
     model.deleteMovie(id)
     view.displayMessage('Фильм успешно удалён!')
+    li = ''
   }
   // your code
 }
